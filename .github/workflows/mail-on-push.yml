@@ -11,9 +11,9 @@ jobs:
           server_port: 587
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
-          subject: Commit Notification
+          subject: Commit detected
           body: |
             Hello,
-            A single commit created by $ {{github.event.pusher.name}}
+            Please be noted, a single commit created by $ {{github.event.pusher.name}}
           to: andrei.tupitsin@gmail.com
           from: ${{ secrets.MAIL_USERNAME }}
