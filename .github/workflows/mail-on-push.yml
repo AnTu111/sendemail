@@ -11,7 +11,7 @@ jobs:
           server_port: 587
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
-          subject: 'Commit detected in in ${{ github.repository }}'
+          subject: 'Commit detected in ${{ github.repository }}'
           body:
             Hello,
             Please be noted, a single commit created by $ {{github.event.pusher.name}}
