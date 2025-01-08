@@ -14,6 +14,6 @@ jobs:
           subject: 'Commit detected in ${{ github.repository }}'
           body:
             Hello,
-            Please be noted, a single commit created by $ {{github.event.pusher.name}}
+            Please be noted, a single commit created by ${{github.event.pusher.name}}
           to: andrei.tupitsin@gmail.com
           from: ${{ secrets.MAIL_USERNAME }}
