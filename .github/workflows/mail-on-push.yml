@@ -15,5 +15,5 @@ jobs:
           body:
             Hello,
             Please be noted, a single commit created by ${{github.event.pusher.name}}
-          to: andrei.tupitsin@gmail.com
+          to: jyri.vaitmaa@tthk.ee
           from: ${{ secrets.MAIL_USERNAME }}
